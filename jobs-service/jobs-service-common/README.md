@@ -19,4 +19,4 @@
 ## Kogito Jobs Service
 
 Documentation:
-https://github.com/kiegroup/kogito-runtimes/wiki/Jobs-Service
+https://github.com/kubesmarts/kogito-runtimes/wiki/Jobs-Service

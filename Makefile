@@ -19,9 +19,9 @@ mvn_opts=
 mvn_cmd=mvn $(mvn_opts)
 
 build_chain_branch=$(shell git branch --show-current)
-build_chain_file='https://raw.githubusercontent.com/kiegroup/kogito-pipelines/main/.ci/pull-request-config.yaml'
-build_chain_group='kiegroup'
-build_chain_project='kiegroup/kogito-apps'
+build_chain_file='https://raw.githubusercontent.com/kubesmarts/kogito-pipelines/main/.ci/pull-request-config.yaml'
+build_chain_group='kubesmarts'
+build_chain_project='kubesmarts/kogito-apps'
 
 default: help
 
@@ -38,7 +38,7 @@ build-quickly:
 .PHONY: build-upstream
 ## (build-chain) Build upstream projects from the same branch. If needed, you can modify the `build_chain_file`, `build_chain_group` and `build_chain_branch`. See `build_chain_file` for setting correct environment variables
 build-upstream: build-chain
-	build-chain build cross_pr -f ${build_chain_file} -o /tmp/bc -p ${build_chain_project} -b ${build_chain_branch} -g ${build_chain_group} --skipParallelCheckout --skipProjectExecution kiegroup/kogito-apps --skipProjectCheckout kiegroup/kogito-apps
+	build-chain build cross_pr -f ${build_chain_file} -o /tmp/bc -p ${build_chain_project} -b ${build_chain_branch} -g ${build_chain_group} --skipParallelCheckout --skipProjectExecution kubesmarts/kogito-apps --skipProjectCheckout kubesmarts/kogito-apps
 
 .PHONY: build-pr
 pr_link=

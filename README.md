@@ -20,18 +20,18 @@
 
 ## Contributing to Kogito
 
-All contributions are welcome! Before you start please read the [contribution guide](https://github.com/kiegroup/kogito-runtimes/blob/main/CONTRIBUTING.md).
+All contributions are welcome! Before you start please read the [contribution guide](https://github.com/kubesmarts/kogito-runtimes/blob/main/CONTRIBUTING.md).
 
 ## Building from source
 
 - Check out the source:
 ```
-git clone git@github.com:kiegroup/kogito-apps.git
+git clone git@github.com:kubesmarts/kogito-apps.git
 ```
 
 > If you don't have a GitHub account use this command instead:
 > ```
-> git clone https://github.com/kiegroup/kogito-apps.git
+> git clone https://github.com/kubesmarts/kogito-apps.git
 > ```
 
 ## Getting Help
